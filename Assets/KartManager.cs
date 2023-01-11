@@ -18,7 +18,6 @@ public class KartManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
 
     }
 
@@ -45,6 +44,11 @@ public class KartManager : MonoBehaviour
     public void exitControls()
     {
         kartList[m_id].SetActive(true);
+
+    }
+    public void startGame()
+    {
+        PlayerPrefs.SetInt("kart_id", m_id);
 
     }
 }
