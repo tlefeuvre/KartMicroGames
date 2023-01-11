@@ -48,7 +48,7 @@ public class KartManager : MonoBehaviour
     }
     public void startGame()
     {
-        PlayerPrefs.SetInt("kart_id", m_id);
+        PlayerPrefs.SetInt("kartId", m_id);
 
     }
 }
