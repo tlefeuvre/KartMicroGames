@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WinScene.unity
     guid: d6801f2e59f75ee4b919cf5da4e48e3b
-  m_configObjects: {}
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 77a7de9aabd59f44b966ff62d12e696d,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e3f56dac17980e74abf867f28c362997,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 34f77099ac23aeb45be422f9bc700301,
+      type: 2}
