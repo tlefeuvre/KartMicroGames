@@ -9,7 +9,7 @@ public class KartManagerGame : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        m_id = PlayerPrefs.GetInt("kartId");
+        m_id = 0;
         for (int i = 0; i < kartList.Length; i++)
             kartList[i].SetActive(false);
         kartList[m_id].SetActive(true);
