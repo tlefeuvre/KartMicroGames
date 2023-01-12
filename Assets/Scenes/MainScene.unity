@@ -12727,13 +12727,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 4.38, y: 0, z: 0}
-=======
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 90.517, y: 0, z: 0}
->>>>>>> Stashed changes
 --- !u!114 &1207105320
 MonoBehaviour:
   m_ObjectHideFlags: 0
