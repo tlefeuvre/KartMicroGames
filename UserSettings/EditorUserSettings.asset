@@ -6,33 +6,18 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedSceneGuid-0:
-      value: 07500303530d505e5b0a5e2616760d44414e487f7c7d73617a7b4967b1b16060
-      flags: 0
-    RecentlyUsedSceneGuid-1:
-      value: 0553020000530c5d595a5421167b5c4442151b297b7e7766757f4a62e0b73068
-      flags: 0
-    RecentlyUsedSceneGuid-2:
-      value: 55040502070d0d080e59542745270e44404e4d732a7d2061757d1962e1b0363e
-      flags: 0
-    RecentlyUsedSceneGuid-3:
-      value: 5205005604030b080b5c5a7446210c44474f4b297f2c7534752b4f63bab76c3b
-      flags: 0
-    RecentlyUsedSceneGuid-4:
-      value: 54505502070c5a5a09585871112609444e15197a792c776278284d36b2b2366d
-      flags: 0
-    RecentlyUsedSceneGuid-5:
-      value: 5a5200525c50590a5c5a5b7a42775d44474e1b2e2d7c76667e704535e0b2316f
-      flags: 0
-    RecentlyUsedSceneGuid-6:
       value: 07070c5654535b5e58570a7545265a44144e49732f2e73342c7d1867bae5673a
       flags: 0
-    RecentlyUsedSceneGuid-7:
+    RecentlyUsedSceneGuid-1:
+      value: 5a5200525c50590a5c5a5b7a42775d44474e1b2e2d7c76667e704535e0b2316f
+      flags: 0
+    RecentlyUsedSceneGuid-2:
       value: 5a01065155515d5a545b5c73477409444f161a727e2d27627a78446be3b8373d
       flags: 0
-    RecentlyUsedSceneGuid-8:
+    RecentlyUsedSceneGuid-3:
       value: 07030d5453050d030956582149775d1441161b73797076672f7a1932bbb9306c
       flags: 0
-    RecentlyUsedSceneGuid-9:
+    RecentlyUsedSceneGuid-4:
       value: 5a03035e53505b08090f5e2316775e44104f407a7f292736797d1e67b5b16669
       flags: 0
     vcSharedLogLevel:
@@ -43,7 +28,7 @@ EditorUserSettings:
   m_VCDebugCmd: 0
   m_VCDebugOut: 0
   m_SemanticMergeMode: 2
-  m_DesiredImportWorkerCount: 2
+  m_DesiredImportWorkerCount: 3
   m_StandbyImportWorkerCount: 2
   m_IdleImportWorkerShutdownDelay: 60000
   m_VCShowFailedCheckout: 1
