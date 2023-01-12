@@ -11,7 +11,6 @@ public class GameUIManager : MonoBehaviour
 
     public GameObject[] speedGO = new GameObject[2];
 
-    public GameObject KartGloabal;
 
     // Start is called before the first frame update
     void Start()
