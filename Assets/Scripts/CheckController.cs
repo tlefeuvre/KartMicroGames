@@ -17,7 +17,5 @@ public class CheckController : MonoBehaviour
 
         device.TryGetFeatureValue(CommonUsages.primary2DAxis, out inputAxis);
 
-        Debug.Log(inputAxis[0] + "et" + inputAxis[1]);
-
     }
 }
