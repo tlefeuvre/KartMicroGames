@@ -11,9 +11,13 @@ public class CheckController : MonoBehaviour
         var desiredCharacteristics = UnityEngine.XR.InputDeviceCharacteristics.Right;
         UnityEngine.XR.InputDevices.GetDevicesWithCharacteristics(desiredCharacteristics, leftHandedControllers);
 
-        foreach (var device in leftHandedControllers)
-        {
-            Debug.Log(string.Format("Device name '{0}' has characteristics '{1}'", device.name, device.characteristics.ToString()));
-        }
+        InputDevice device = leftHandedControllers[0];
+
+        Vector2 inputAxis;
+
+        device.TryGetFeatureValue(CommonUsages.primary2DAxis, out inputAxis);
+
+        Debug.Log(inputAxis[0] + "et" + inputAxis[1]);
+
     }
 }
