@@ -2,11 +2,13 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.VFX;
+using UnityEngine.XR;
 
 namespace KartGame.KartSystems
 {
     public class ArcadeKart : MonoBehaviour
     {
+        Vector2 inputAxis;
 
         public float current_speed_recup;
         [System.Serializable]
@@ -284,7 +286,19 @@ namespace KartGame.KartSystems
 
         void FixedUpdate()
         {
-            
+            // Ajout BAPT START
+
+            var leftHandedControllers = new List<UnityEngine.XR.InputDevice>();
+            var desiredCharacteristics = UnityEngine.XR.InputDeviceCharacteristics.Right;
+            UnityEngine.XR.InputDevices.GetDevicesWithCharacteristics(desiredCharacteristics, leftHandedControllers);
+
+            InputDevice device = leftHandedControllers[0];
+
+            device.TryGetFeatureValue(CommonUsages.primary2DAxis, out inputAxis);
+
+
+
+            // Ajout BAPT END
 
             UpdateSuspensionParams(FrontLeftWheel);
             UpdateSuspensionParams(FrontRightWheel);
@@ -314,9 +328,18 @@ namespace KartGame.KartSystems
             AirPercent = 1 - GroundPercent;
 
             // apply vehicle physics
+
+
             if (m_CanMove)
             {
-                MoveVehicle(Input.Accelerate, Input.Brake, Input.TurnInput);
+                if (inputAxis[1] > 0.66f)
+                    MoveVehicle(true, false, inputAxis[0]);
+                if (inputAxis[1] < -0.66f)
+                    MoveVehicle(false, true, inputAxis[0]);
+                else
+                    MoveVehicle(false, false, inputAxis[0]);
+
+                //MoveVehicle(Input.Accelerate, Input.Brake, Input.TurnInput);
             }
             GroundAirbourne();
 
