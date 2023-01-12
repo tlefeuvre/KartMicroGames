@@ -7,6 +7,8 @@ namespace KartGame.KartSystems
 {
     public class ArcadeKart : MonoBehaviour
     {
+
+        public float current_speed_recup;
         [System.Serializable]
         public class StatPowerup
         {
@@ -282,6 +284,8 @@ namespace KartGame.KartSystems
 
         void FixedUpdate()
         {
+            
+
             UpdateSuspensionParams(FrontLeftWheel);
             UpdateSuspensionParams(FrontRightWheel);
             UpdateSuspensionParams(RearLeftWheel);
@@ -432,6 +436,8 @@ namespace KartGame.KartSystems
             float accelRampT = currentSpeed / maxSpeed;
             float multipliedAccelerationCurve = m_FinalStats.AccelerationCurve * accelerationCurveCoeff;
             float accelRamp = Mathf.Lerp(multipliedAccelerationCurve, 1, accelRampT * accelRampT);
+
+            current_speed_recup = currentSpeed;
 
             bool isBraking = (localVelDirectionIsFwd && brake) || (!localVelDirectionIsFwd && accelerate);
 
